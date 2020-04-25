@@ -1,0 +1,22 @@
+<template>
+    <div>
+        <el-input
+            :type="type"
+            v-model="sizeForm[model]"
+            v-bind="attr"
+            v-on="evt" 
+        />
+    </div>
+</template>
+<script>
+export default {
+    name:"inputComponent",
+    props:[
+        'type',
+        'model',
+        'sizeForm',
+        'evt',
+        'attr'
+    ]
+}
+</script>

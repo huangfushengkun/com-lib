@@ -1,0 +1,109 @@
+/*
+ * 重置SCSS
+ */
+ html,body,div,section,ul,li,h1,h2,h3,h4,h5,h6,dl,dt,dd,img{
+     margin: 0px;
+     padding: 0px;
+ }
+ img{
+     display: block;
+     border: none;
+ }
+ html,body,.wrap,.content{
+     height: 100%;
+ }
+ .el-message-box {
+    vertical-align: middle;
+    background-color: #19315e;
+    border: 0px solid #ebeef5;
+    font-size: 18px;
+}
+.el-message-box__title {
+    padding-left: 0;
+    margin-bottom: 0;
+    font-size: 20px;
+    line-height: 1;
+    color: #66ccff;
+}
+.el-message-box__message {
+    margin: 0;
+    color: #66ccff;
+    font-size: 18px;
+    text-align: center;
+}
+.el-button--small {
+    color: #66ccff;
+    background-color: rgba(1, 143, 252, 0.2);
+    border: none;
+    font-family: "Microsoft YaHei";
+}
+
+.el-input__inner,.el-textarea__inner,.el-range-editor input{
+    height: 40px;
+    font-size: 15px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid rgba(102, 204, 255, 0.4);
+    color: #66ccff !important;
+    background: #0c3059;
+}
+.el-input__inner::placeholder,.el-range-editor input::placeholder,.el-range-separator{
+    color: #66ccff !important;
+}
+.el-button--primary{width: 100px;
+    background: rgba(1, 143, 252, 0.3);
+    border: none;
+    color: #66ccff;
+}
+.el-button--primary:hover,.el-button--primary:active{
+    background: rgba(1, 143, 252, 0.4);
+    border: 0px solid rgba(102, 204, 255, 0.4);
+    color: #66ccff;
+}
+
+.el-button--default{width: 100px;
+    background: transparent;
+    border: 1px solid rgba(102, 204, 255, 0.4);;
+    color: #66ccff;
+}
+.el-button--default:hover,.el-button--default:active{
+    background: transparent;
+    border: 1px solid rgba(102, 204, 255, 0.4);
+    color: #66ccff;
+}
+
+.el-select-dropdown__wrap{
+    background-color:#0c3059;
+}
+.el-select-dropdown{
+    border-color:#0b2342;
+}
+.el-select-dropdown__item.hover, .el-select-dropdown__item:hover{
+    background-color:rgba(1, 143, 252, 0.3);
+}
+.el-select-dropdown__item{
+    color: #66ccff;
+}
+.el-form-item__label{
+    color: #66ccff;
+}
+.el-radio,.el-checkbox,.el-radio__input.is-checked+.el-radio__label,.el-checkbox__input.is-checked+.el-checkbox__label{
+    color:#66ccff;
+}
+.el-radio.is-bordered{
+    border:none;
+}
+.el-radio__inner{
+    border-color:#66ccff;
+    background-color:transparent;
+}
+.el-checkbox-button__inner,.el-checkbox__inner{
+  background: transparent;
+  border: 1px solid #66ccff;
+  color:#66ccff;
+}
+.el-checkbox-button.is-checked .el-checkbox-button__inner{
+  color: #0079B9;
+  background-color: #66ccff;
+  border-color: #66ccff;
+}

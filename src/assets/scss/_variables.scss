@@ -1,0 +1,41 @@
+/*
+ * 变量
+ * */
+ /*********** 颜色 ****************/
+
+ /*********** 字体 ****************/
+
+ $fontSize14:14px;
+ $fontSize16:16px;
+ $fontSize18:18px;
+ $fontSize20:20px;
+
+ $themeMap:(
+     def:(
+         input_color:#326b97,
+         input_border_bolor:#0d568b,
+         input_bg_bolor:#0c3161,
+         select_color:#66ccff,
+         select_border_color:#0b2342,
+         select_bg_color:#0c3059,
+         title_color:#68cdff,
+         btn_bg_color:#3578a7,
+         btn_border_color:#0d568b,
+         btn_color:#66cefe,
+         bg:url(~/static/images/login_bg.3eb3f27.jpg) repeat center center transparent
+     ),
+     oth:(
+        input_color:#ffffff,
+        input_border_bolor:#ffffff,
+        input_bg_bolor:#0c3161,
+        select_color:#ffffff,
+        select_border_color:#ffffff,
+        select_bg_color:#0c3059,
+        title_color:#ffffff,
+        btn_bg_color:#ffffff,
+        btn_border_color:#0d568b,
+        btn_color:#666,
+        bg:url(~/static/images/timg.jpg) repeat center center transparent
+     )
+ );
+

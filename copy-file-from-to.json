@@ -1,0 +1,12 @@
+{
+    "copyFiles":[{
+        "from":"src/index.js",
+        "to":"wc-lib/index.js"
+    },{
+        "from":"src/components/*.vue",
+        "to":"wc-lib/components"
+    },{
+        "from":"src/assets/**",
+        "to":"wc-lib/assets"
+    }]
+}

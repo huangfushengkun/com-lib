@@ -1,0 +1,145 @@
+<template>
+    <el-menu
+      class="menu-container"
+      @select="fMenuSelect"
+      active-text-color="#ffd04b"
+    >
+      <menu-component
+        v-for="(item,key) in list"
+        :key="key"
+        :index="key+1"
+        :source="item"
+      />
+
+    </el-menu>
+</template>
+<script>
+import menuComponent from "./utilis/menus";
+export default {
+    name:"menuComponentI",
+    data(){
+        return {
+            list:[{
+                name:"状态",
+            },{
+                name:"管理",
+                list:[{
+                    name:"监控"
+                },{
+                    name:"技术"
+                },{
+                    name:"故障"
+                },{
+                    name:"监控"
+                }]
+            },{
+                name:"管理",
+                list:[{
+                    name:"正文",
+                    list:[{
+                        name:"证明"
+                    },{
+                        name:"试车"
+                    },{
+                        name:"曲线"
+                    },{
+                        name:"结论"
+                    },{
+                        name:"说明"
+                    },{
+                        name:"寿命"
+                    },{
+                        name:"出厂"
+                    },{
+                        name:"零件"
+                    },{
+                        name:"单元体"
+                    },{
+                        name:"非单元体"
+                    },{
+                        name:"封存"
+                    },{
+                        name:"使用"
+                    },{
+                        name:"时间"
+                    },{
+                        name:"记事"
+                    },{
+                        name:"通报",
+                    }]
+                },{
+                    name:"副本",
+                    list:[{
+                        name:"工作时间"
+                    },{
+                        name:"试车"
+                    },{
+                        name:"维护"
+                    },{
+                        name:"定期"
+                    }]
+                },{
+                    name:"检验",
+                    list:[{
+                        name:"清单"
+                    },{
+                        name:"间隙"
+                    },{
+                        name:"参数"
+                    },{
+                        name:"消耗"
+                    },{
+                        name:"光谱"
+                    }]
+                },{
+                    name:"管理"
+                },{
+                    name:"清单"
+                }]
+            },{
+                name:"识别"
+            },{
+                name:"智能"
+            },{
+                name:"分析"
+            },{
+                name:"分析"
+            },{
+                name:"技术"
+            },{
+                name:"学习"
+            },{
+                name:"系统"
+            }]
+        }
+    },
+    components:{
+      menuComponent
+    },
+    methods:{
+        fMenuSelect(index,indexPath){
+            console.log(index);
+            console.log(indexPath);
+        }
+    }
+}
+</script>
+<style lang="scss" scoped>
+  .menu-container{
+      background-color: transparent;
+      border: none;
+      .el-menu-item{
+       color:rgb(102, 204, 255) !important;
+       font-size: 16px;
+      }
+  }
+</style>
+<style>
+      .el-submenu__title{
+       color:rgb(102, 204, 255) !important;
+       font-size: 16px;
+      }
+      .el-menu{
+          background-color: transparent;
+      }
+</style>

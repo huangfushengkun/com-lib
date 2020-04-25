@@ -1,0 +1,8 @@
+@mixin themems(){
+    @each $key,$item in $themeMap{
+        .theme-#{$key}{
+            $theme-map:$item !global;
+            @content;
+        }
+    }    
+}
