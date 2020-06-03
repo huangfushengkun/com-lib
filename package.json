@@ -2,7 +2,7 @@
   "name": "wc-lib",
   "version": "1.0.0",
   "description": "A Vue.js project",
-  "author": "yangbo <b.yang@hangshutech.com>",
+  "author": "huanfu <huangfushengkun@163.com>",
   "private": true,
   "scripts": {
     "mock": "webpack-dev-server --inline --progress --open --config build/webpack.mock.conf.js",
